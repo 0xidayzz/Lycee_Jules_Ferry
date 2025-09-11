@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice4</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body class="styleCorps">
+
+    <div class="CorpsBar">
+      <nav>
+        <h2>Sommaire</h2>
+        <p>Certaines boîtes sont maintenant trop grandes pour leur contenu, mais d'autres trop petites: observez si celui-ci déborde.
+            Ces propriétés ne sont pas supposées s'appliquer aux boîtes de type inline, qui sont sensées servir uniquement à des mises en forme locale du texte et non à de la mise en page.
+            </p>
+        <ul >
+          <li><a class="infobulle" href="#" >Accueil<span>Ici je peux mettre tout mon texte d'aide<br />
+            avec des mots en <strong>Exemple1</strong> par exemple.</span></a></li>
+            <li ><a class="infobulle" href="#">Archives <span>Ici je peux mettre tout mon texte d'aide<br />
+              avec des mots en <strong>Exempl2</strong> par exemple.</span></a></li>
+
+              <li><a href="#" class="infobulle">Me contacter<span>Ici je peux mettre tout mon texte d'aide<br />
+                avec des mots en <strong>Exempl3</strong> par exemple.</span></a></li>
+              </ul>
+            </nav>
+      </div>
+
+      <div class="slidershow position">
+
+        <img src="./futur.jpg" alt="future">
+
+        <div class="slides ">
+          <input type="radio" name="r" id="r1" checked>
+          <input type="radio" name="r" id="r2">
+          <input type="radio" name="r"id="r3">
+          <input type="radio" name="r" id="r4">
+          <div class="slide s1 s2">
+          <!--<img src="../RESSOURCES/Besoin.jpg" alt="">-->  
+            <h2>1</h2>
+          </div>
+          <div class="slide s2">
+            <h2>2</h2>
+            <!-- <img src="../RESSOURCES/solution.jpg" alt=""> -->
+          </div>
+          <div class="slide s2">
+            <h2>3</h2>
+            <!-- <img src="../RESSOURCES/fusion.jpeg" alt=""> -->
+          </div>
+          <div class="slide s2">
+            <h2>4</h2>
+            <!-- <img src="../RESSOURCES/futur.jpg" alt=""> -->
+          </div>
+        </div>
+
+        <div class="navigation">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+          <label for="r4" class="bar"></label>
+        </div>
+      </div>
+
+    </body>
+</html>
