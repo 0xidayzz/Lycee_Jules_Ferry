@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="formulaire">
+        <h2>Formulaire d'inscription</h2>
+        
+        <label>Sexe :</label>
+        <select id="sexe">
+            <option>Homme</option>
+            <option>Femme</option>
+        </select>
+        
+        <label>Nom :</label>
+        <input type="text" id="nom">
+        
+        <label>Prénom :</label>
+        <input type="text" id="prenom">
+        
+        <label>Âge :</label>
+        <input type="number" id="age">
+        
+        <label>Téléphone :</label>
+        <input type="tel" id="telephone">
+        
+        <label>Email :</label>
+        <input type="email" id="email">
+        
+        <button onclick="afficherInfos()">Afficher les informations</button>
+        
+        <div id="resultat"></div>
+    </div>
+</body>
+</html>

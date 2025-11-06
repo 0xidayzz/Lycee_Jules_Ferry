@@ -1,0 +1,27 @@
+.formulaire {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+}
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#resultat {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+}

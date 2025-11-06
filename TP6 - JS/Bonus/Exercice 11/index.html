@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="restaurant">
+        <h1>Menu du Restaurant</h1>
+        
+        <h3>Entrée :</h3>
+        <select id="entree">
+            <option value="0">Aucune entrée - 0€</option>
+            <option value="5">Salade verte - 5€</option>
+            <option value="7">Soupe à l'oignon - 7€</option>
+            <option value="8">Foie gras - 8€</option>
+        </select>
+        
+        <h3>Plat principal :</h3>
+        <select id="plat">
+            <option value="0">Aucun plat - 0€</option>
+            <option value="15">Steak frites - 15€</option>
+            <option value="18">Saumon grillé - 18€</option>
+            <option value="20">Magret de canard - 20€</option>
+        </select>
+        
+        <h3>Dessert :</h3>
+        <select id="dessert">
+            <option value="0">Aucun dessert - 0€</option>
+            <option value="5">Tarte aux pommes - 5€</option>
+            <option value="6">Tiramisu - 6€</option>
+            <option value="7">Mousse au chocolat - 7€</option>
+        </select>
+        
+        <button onclick="calculerAddition()">Calculer l'addition</button>
+        
+        <div id="total"></div>
+    </div>
+    
+</body>
+</html>

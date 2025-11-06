@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <div class="quiz-container">
+                    <div class="quiz-header p-4 p-md-5">
+                        <h1 class="quiz-title text-center mb-3">Quizz JavaScript 🧠</h1>
+                        <p class="quiz-intro text-center mb-0">
+                            Quizz sur le thème de JavaScript.<br>
+                            Chaque bonne réponse vous donnera 1 point.<br>
+                            <strong>Bonne chance !</strong>
+                        </p>
+                    </div>
+                    <div class="p-4 p-md-5">
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 1</div>
+                            <p class="question-text mb-3">Quel mot-clé permet de déclarer une variable dont la valeur peut changer et qui a une portée de bloc ?</p>
+                            <select class="form-select" id="q1">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - var</option>
+                                <option value="b">B - const</option>
+                                <option value="c">C - let</option>
+                                <option value="d">D - static</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 2</div>
+                            <p class="question-text mb-3">Que renvoie l'expression typeof [] en JavaScript ?</p>
+                            <select class="form-select" id="q2">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - "array"</option>
+                                <option value="b">B - "object"</option>
+                                <option value="c">C - "list"</option>
+                                <option value="d">D - "undefined"</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 3</div>
+                            <p class="question-text mb-3">Quelle est la différence entre == et === ?</p>
+                            <select class="form-select" id="q3">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - == compare types, === compare valeurs</option>
+                                <option value="b">B - == compare valeurs après conversion de type, === compare valeur et type strictement</option>
+                                <option value="c">C - Ils sont équivalents</option>
+                                <option value="d">D - === est obsolète</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 4</div>
+                            <p class="question-text mb-3">Que fait la méthode Array.prototype.map() ?</p>
+                            <select class="form-select" id="q4">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - Filtre les éléments d'un tableau selon une condition</option>
+                                <option value="b">B - Transforme chaque élément d'un tableau en retournant un nouveau tableau</option>
+                                <option value="c">C - Trie les éléments d'un tableau</option>
+                                <option value="d">D - Supprime les doublons d'un tableau</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 5</div>
+                            <p class="question-text mb-3">Dans une fonction fléchée (() => {}), quel est le comportement de this par rapport à une fonction normale ?</p>
+                            <select class="form-select" id="q5">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - this est toujours window</option>
+                                <option value="b">B - this est lié lexicalement (hérite du this du contexte parent)</option>
+                                <option value="c">C - this est toujours undefined</option>
+                                <option value="d">D - this est dynamique comme dans les fonctions normales</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 6</div>
+                            <p class="question-text mb-3">Que fait JSON.stringify() ?</p>
+                            <select class="form-select" id="q6">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - Convertit un objet JavaScript en une chaîne JSON</option>
+                                <option value="b">B - Parse une chaîne JSON en objet JavaScript</option>
+                                <option value="c">C - Minifie le code JavaScript</option>
+                                <option value="d">D - Exécute du JSON comme du code</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 7</div>
+                            <p class="question-text mb-3">Quel code crée une promesse résolue immédiatement avec la valeur 42 ?</p>
+                            <select class="form-select" id="q7">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - Promise.done(42)</option>
+                                <option value="b">B - new Promise(42)</option>
+                                <option value="c">C - Promise.resolve(42)</option>
+                                <option value="d">D - Promise.return(42)</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 8</div>
+                            <p class="question-text mb-3">Quel résultat produit [1,2,3].reduce((a,b)=>a+b, 0) ?</p>
+                            <select class="form-select" id="q8">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - [1,2,3]</option>
+                                <option value="b">B - 6</option>
+                                <option value="c">C - 0</option>
+                                <option value="d">D - NaN</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 9</div>
+                            <p class="question-text mb-3">Que fait async devant une fonction ?</p>
+                            <select class="form-select" id="q9">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - Transfère la fonction pour qu'elle s'exécute en parallèle (multi-thread)</option>
+                                <option value="b">B - Indique que la fonction retourne automatiquement une Promesse et permet d'utiliser await à l'intérieur</option>
+                                <option value="c">C - Rend la fonction plus rapide</option>
+                                <option value="d">D - Empêche la fonction d'utiliser await</option>
+                            </select>
+                        </div>
+
+                        <div class="question-card p-4 mb-4">
+                            <div class="question-number mb-2">Question 10</div>
+                            <p class="question-text mb-3">Quel est le bon moyen d'ajouter un écouteur d'événement click sur un bouton avec l'id "btn" ?</p>
+                            <select class="form-select" id="q10">
+                                <option value="">-- Sélectionnez une réponse --</option>
+                                <option value="a">A - document.getElementById("btn").on("click", fn)</option>
+                                <option value="b">B - document.querySelector("#btn").addEventListener("click", fn)</option>
+                                <option value="c">C - document.getElementById("btn").listen("click", fn)</option>
+                                <option value="d">D - document.querySelector("#btn").clickListener(fn)</option>
+                            </select>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <button class="btn btn-submit" onclick="total()">Valider mes réponses !</button>
+                        </div>
+
+                        <div id="total" class="mt-5 total"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
